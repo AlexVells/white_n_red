@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red & White sushi</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="./js/jquery.maskedinput.min.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                
+                <div class="nav_container container ">
+                    <div class="header__burger">
+                        <span></span>
+                    </div>
+                    <div class="navigation">
+                        <div class="navigation__logo">
+                            <img src="./img/pc/header/Logo.png" alt="R&W Sushi logo">
+                        </div>
+                        
+                        <div class="navigation__menu">
+                            <ul class="navigation__list">
+                                <li class="navigation__item"><a href="#main">main</a></li>
+                                <li class="navigation__item"><a href="#menu">menu</a></li>
+                                <li class="navigation__item"><a href="#delivery">delivery</a></li>
+                                <li class="navigation__item"><a href="#contacts">contacts</a></li>
+                            </ul>  
+                        </div>
+                    </div>
+                    <div class="cart">
+                        <img src="./img/pc/header/cart.svg" alt="">
+                        <div class="cart_count">0</div>
+                    </div>
+                    <div class="order">
+                        <span class="cart__title">
+                            Your Order:
+                        </span>
+                        <div class="oreder__close-btn">
+                            <img src="./img/pc/header/close_cart.svg" alt="">
+                        </div>
+
+                        <!-- Cart Items -->
+                        <div class="cart-wrapper">
+                            <!-- Cart Item Template -->
+                        <!--  <div class="order__item" data-id ="01">
+                                <div class="order__info">
+                                    <div class="oreder_item_information">
+                                        <div class="order__info-img">
+                                            <img class="order__item-img" src="./img/pc/menu/items/1.png" alt="">
+                                        </div>
+                                        <div class="info__body">
+                                            <div class="info__body-title">california</div>
+                                            <div class="body__set">
+                                                <span class="body-txt">set:</span>
+                                                <span data-pcs-in class="body-txt item__pcs">6 pcs</span>
+                                            </div>
+                                            <div class="body_weight">
+                                                <span class="body-txt">weight:</span>
+                                                <span class="body-txt item__weight">420g</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div  class="order__item-delete">
+                                        <img data-del-btn src="./img/pc/delete.svg" alt="" class="delete-btn">
+                                    </div>
+                                </div>
+                                <div class="order__item-checker">
+                                    <div class="checker__counter">
+                                        <div class="checker__counter-minus" data-action="minus">-</div>
+                                        <div class="checker__counter-value" data-counter>1</div>
+                                        <div class="checker__counter-plus" data-action="plus">+</div>
+                                    </div>
+                                    <div class="pricer-item">
+                                        <div class="item__total-price">
+                                            <span class="b-price-txt">total price:&nbsp;</span>
+                                            <span class="checker__pricer-t">6</span>
+                                            <span class="bax red-txt">$</span>
+                                        </div>
+                                        <div class="item__price-info">
+                                            <span class="s-price-txt">price per one:&nbsp;</span>
+                                            <span class="checker__pricer-p">6</span>
+                                            <span class="bax">$</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item__underline"></div>
+                            </div> -->
+                            <!-- ----------------------------------------- -->
+                        </div>
+                        <!-- /*---------------------*/ -->
+
+                        <div data-empty-cart class="empty__cart">
+                            Your cart is empty<span class="red-txt">:(</span>
+                        </div>
+
+                        <div class="total__price">
+                            <span class="total-txt">total price:</span>
+                            <span class="total-p">0</span>
+                            <span class="red-txt bax">$</span>
+                            <div class="item__underline"></div>
+                        </div>
+                        <!-- <button class="btn none">ordering</button> -->
+                        <div  class="order-btn none">
+                            <button id="order-btn" class="main-btn order-btn .none" data-action = "openForm">ordering</button>
+                        </div>                   
+                    </div>
+                </div>
+
+            </nav>
+            <div class="header__content container">
+                <div class="header__info">
+                    <h1>Your 
+                        <span class="red-txt">favorite</span>  
+                        sushi
+                    </h1>
+                    <div class="header__txt">
+                        <span >sushi delivery service
+                            <span class="red-txt">to</span> home <span class="red-txt">and</span> work<span class="red-txt">:)</span>
+                        </span>
+                    </div>
+                    <a href="#menu"><button class="header__btn main-btn">see menu</button></a>
+                    <div class="header__contacts">
+                        <div class="contacts-btn">
+                            <img src="./img/pc/header/contact-ico/phone-ico.svg" alt="">
+                        </div>
+                        <div class="contacts-btn">
+                            <img src="./img/pc/header/contact-ico/whatsapp-ico.svg" alt="">
+                        </div>
+                        <div class="contacts-btn">
+                            <img src="./img/pc/header/contact-ico/messenger-ico.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="header__img">
+                    <img src="./img/pc/header/main-banner-img.png" alt="" class="main-banner-img">
+                </div>  
+            </div>
+            <div class="red-line container"></div>
+        </header>
+
+        <main>
+            <section class="menu">
+                
+                <div class="section-title__menu section-title">
+                    <span class="section__title-red-dot">•</span>
+                    <h2><a name="menu"></a>menu</h2>
+                </div>
+
+                <div class="menu__categories">
+                    <div class="categories__item active" data-tab-name="tab-1">
+                        <img src="./img/pc/menu/categories/sushi.png" alt="sushi" class="categories__item-img">
+                        <span class="categories__item-title ">sushi</span>
+                    </div>
+                    <div class="categories__item" data-tab-name="tab-2">
+                        <img src="./img/pc/menu/categories/rolls.png" alt="rolls" class="categories__item-img">
+                        <span class="categories__item-title">rolls</span>
+                    </div>
+                    <div class="categories__item" data-tab-name="tab-3">
+                        <img src="./img/pc/menu/categories/sets.png" alt="sets" class="categories__item-img">
+                        <span class="categories__item-title">sets</span>
+                    </div>
+                    <div class="categories__item" data-tab-name="tab-4">
+                        <img src="./img/pc/menu/categories/drinks.png" alt="drinks" class="categories__item-img">
+                        <span class="categories__item-title">drinks</span>
+                    </div>
+                </div>
+
+                <div class="menu__catalog">
+                    <div class="tab active tab-1">
+                        <div class="catalog__row">
+                            <!-- Catalog item -->
+                            <!-- <div class="row__item" data-id ="01">
+                                <div class="item__img">
+                                    <img class="row__item-img" src="./img/pc/menu/items/1.png" alt="">
+                                </div>
+                                <div class="item__info">
+                                    <span data-pcs-in class="item__info-subtitle row__item-pcs">6pcs</span>
+                                    <h4 class="item__info-title">california</h4>
+                                    <span class="item__info-subtitle">Ingridients</span>
+                                    <p class="item__info-ingridients">crab mix, motoyaki sauce, cucumber, avocado</p>
+                                </div>
+                                <div class="item-bottom">
+                                    <div class="item__checker">
+                                        <div class="checker__counter">
+                                            <div class="checker__counter-minus" data-action="minus">-</div>
+                                            <div class="checker__counter-value" data-counter>1</div>
+                                            <div class="checker__counter-plus" data-action="plus">+</div>
+                                        </div>
+                                        <div class="checker__pricer">
+                                            <span class="checker__pricer-w">420g</span>
+                                            <div class="price-container">
+                                                <span class="checker__pricer-p">6</span>
+                                                <span class="bax red-txt">$</span>
+                                            </div>
+                                        </div>  
+                                    </div>
+                                    <button data-add-btn class="item__button">add to cart</button>
+                                </div>
+                            </div> -->
+                            <!-- /*----------------------*/ -->           
+                        </div>
+                    </div>
+                    <div class="tab tab-2">
+                        <div class="catalog__rolls">
+                            <span>
+                                It's empty for now, but there will be something <span class="red-txt">soon.</span> 
+                            </span>
+                        </div>
+                    </div>
+                    <div class="tab tab-3">
+                        <div class="catalog__sets">
+                            <span class="none">
+                                It's empty for now, but there will be something <span class="red-txt">soon.</span> 
+                            </span>
+                            <div class="row__item" data-id ="01">
+                                <div class="item__img">
+                                    <img class="row__item-img" src="./img/pc/menu/items/1.png" alt="">
+                                </div>
+                                <div class="item__info">
+                                    <span data-pcs-in class="item__info-subtitle row__item-pcs">6pcs</span>
+                                    <h4 class="item__info-title">california big set</h4>
+                                    <span class="item__info-subtitle">Ingridients</span>
+                                    <p class="item__info-ingridients">crab mix, motoyaki sauce, cucumber, avocado</p>
+                                </div>
+                                <div class="item-bottom">
+                                    <div class="item__checker">
+                                        <div class="checker__counter">
+                                            <div class="checker__counter-minus" data-action="minus">-</div>
+                                            <div class="checker__counter-value" data-counter>1</div>
+                                            <div class="checker__counter-plus" data-action="plus">+</div>
+                                        </div>
+                                        <div class="checker__pricer">
+                                            <span class="checker__pricer-w">1200g</span>
+                                            <div class="price-container">
+                                                <span class="checker__pricer-p">25</span>
+                                                <span class="bax red-txt">$</span>
+                                            </div>
+                                        </div>  
+                                    </div>
+                                    <button data-add-btn class="item__button">add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab tab-4">
+                        <div class="catalog__drinks">
+                            <span>
+                                It's empty for now, but there will be something <span class="red-txt">soon.</span> 
+                            </span>
+                        </div>
+                    </div>            
+                </div>
+
+            </section>
+
+            <section class="delivery">
+                <div class="container">
+                    <div class="section-title__delivery section-title">
+                        <span class="section__title-red-dot">•</span>
+                        <h2><a name="delivery"></a>delivery</h2>
+                    </div>
+                    <div class="delivery__subtitle">
+                        <span class="delivery__subtitle-one">delivery is carried out</span>
+                        <span class="delivery__subtitle-two">from 09:00 to 23:00</span>
+                    </div>
+                    <div class="delivery__benefits">
+                        <div class="benefits__item">
+                            <h3 class="benefits__item-title">fast ordering<span class="red-txt">.</span></h3>
+                            <span class="benefits__item-txt">on the website or by phone</span>
+                        </div>
+                        <div class="benefits__item">
+                            <h3 class="benefits__item-title">convenient payment<span class="red-txt">.</span></h3>
+                            <span class="benefits__item-txt">online on the site or in cash / card to the courier</span>
+                        </div>
+                        <div class="benefits__item">
+                            <h3 class="benefits__item-title">fast delivery<span class="red-txt">.</span></h3>
+                            <span class="benefits__item-txt">free delivery within the city in 30 minutes
+                            </span>
+                        </div>
+                    </div>
+                    <a href="#menu"><button class="delivery__btn main-btn">see menu</button></a>
+                </div>
+            </section>
+
+            <section class="contacts">
+                <div class="section-title__contacts section-title">
+                    <span class="section__title-red-dot">•</span>
+                    <h2><a name="contacts"></a>contact us</h2>
+                </div>
+
+                <div class="contacts__body container">
+                    <div class="contact-items">
+                        <span class="cont-item-title">phone</span>
+                        <span class="cont-item-info">+5 800 434 11 22</span>
+                    </div>
+                    <div class="contact-items">
+                        <span class="cont-item-title">e-mail</span>
+                        <span class="cont-item-info">red_n_black@sushi.com</span>
+                    </div>
+                    <div class="contact-items">
+                        <span class="cont-item-title">social</span>
+                        <div class="contact-us__social">
+                            <img src="./img/pc/footer/instagram.svg" alt="" class="contact-us__ico">
+                            <img src="./img/pc/footer/facebook.svg" alt="" class="contact-us__ico">
+                            <img src="./img/pc/footer/youtube.svg" alt="" class="contact-us__ico">
+                            <img src="./img/pc/footer/twitter.svg" alt="" class="contact-us__ico">
+                        </div>
+                    </div>
+                    <div class="contact-items">
+                        <span class="cont-item-title">adress</span>
+                        <span class="cont-item-info">122, Central avn, Edinburgh</span>
+                    </div>
+                </div>
+                <img src="./img/pc/bamboo.png" alt="" class="contact-img">
+            </section>
+        </main>
+
+        <footer>
+            <div class="navigation__footer">
+                <div class="navigation__logo">
+                    <img src="./img/pc/header/Logo.png" alt="R&W Sushi logo">
+                </div>
+                
+                <div class="navigation__menu">
+                    <ul class="navigation__list">
+                        <li class="navigation__item"><a href="#main">main</a></li>
+                        <li class="navigation__item"><a href="#menu">menu</a></li>
+                        <li class="navigation__item"><a href="#delivery">delivery</a></li>
+                        <li class="navigation__item"><a href="#contacts">contacts</a></li>
+                    </ul>  
+                </div>
+            </div>
+            <div class="commercial">
+            <a href="#"><span class="commercial-txt">Privacy policy</span></a>
+                <span class="commercial-txt">Red & white Sushi 2022</span>
+                <a href="#"><span class="commercial-txt">Term of use</span></a>
+            </div>
+        </footer>
+    </div>
+    <div id="popupOrder" class="create_order_popup none" data-action="closeOrderForm">
+        <div class="order_form">
+            <button class="close-order-form" >
+                <img src="./img/pc/close.svg" alt="" data-action="closeOrderForm">
+            </button>
+            <div class="first-screen-order">
+                <h5 class="order-form-title">enter your delivery details</h5>
+                <form id="form" action="" onsubmit="return false">
+                    <div class="input" id="nameInput">
+                        <label for="text">name<span class="red-txt">*</span></label>
+                        <input id="username" type="text" placeholder="enter contact name" required pattern="[A-Za-z]{1,50}">
+                    </div>
+                    <div class="input" id="phoneInput">
+                        <label for="tel">phone<span class="red-txt">*</span></label>
+                        <input id="userPhone" type="tel" placeholder="enter contact phone"  required >
+                    </div>
+                    <div class="input" id="adressInput">
+                        <label for="adress">adress<span class="red-txt">*</span></label>
+                        <input id="userAdress" type="adress" placeholder="enter shipping address" required>
+                    </div>
+                    <div class="input">
+                        <label for="notice">notice<span class="red-txt s-red-txt">&nbsp;(optional)</span></label>
+                        <textarea name="notice" id="" cols="25" rows="4" class="input-tarea" placeholder="Do you have any questions/wishes/suggestions? <br> Write them here"></textarea>
+                    </div>
+                    <button type="submit" class="create-order-btn" data-action="placeOrder">create order</button>                  
+                </form>
+            </div>
+            <div class="second-screen-order none">
+                <span class="success-thanks">Thanks!</span>
+                <span class="success">Your order has been successfully placed</span>
+            </div>
+        </div>
+
+    </div>
+
+<script src="./js/getSushi.js"></script>
+<script src="./js/categories.js"></script>
+<script src="./js/totalPrice.js"></script>
+<script src="./js/checkCart.js"></script>   
+<script src="./js/counter.js"></script>
+<script src="./js/burger.js"></script>
+<script src="./js/cart_button.js"></script>
+<script src="./js/cart.js"></script>
+<script src="./js/cart_delete.js"></script>
+<script src="./js/cartCounter.js"></script>
+<script src="./js/formValidator.js"></script>
+<script src="./js/createOrderForm.js"></script>
+<script src="./js/patternMask.js"></script>
+</body>
+</html>

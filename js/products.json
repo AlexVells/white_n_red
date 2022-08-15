@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "imgSrc": "1.png",
+        "title": "california",
+        "itemsInBox": "6pcs",
+        "weight": "420g",
+        "price": 6,
+        "ingridients": "crab mix, motoyaki sauce, cucumber, avocado"
+    },
+    {
+        "id": 2,
+        "imgSrc": "2.png",
+        "title": "peppered tuna tataki roll",
+        "itemsInBox": "6pcs",
+        "weight": "440g",
+        "price": 10,
+        "ingridients": "lobster & citrus aioli, avocado, tuna tataki, sesam"
+    },
+    {
+        "id": 3,
+        "imgSrc": "3.png",
+        "title": "las vegas roll",
+        "itemsInBox": "8pcs",
+        "weight": "530g",
+        "price": 14,
+        "ingridients": "salmon, crab mix, cream cheese, tempura fried"
+    },
+    {
+        "id": 4,
+        "imgSrc": "4.png",
+        "title": "vegetarian",
+        "itemsInBox": "8pcs",
+        "weight": "500g",
+        "price": 12,
+        "ingridients": "avocado, rice, sesame, cucumber, tofu, spicy mayo"
+    },
+    {
+        "id": 1,
+        "imgSrc": "1.png",
+        "title": "california",
+        "itemsInBox": "6pcs",
+        "weight": "420g",
+        "price": 6,
+        "ingridients": "crab mix, motoyaki sauce, cucumber, avocado"
+    },
+    {
+        "id": 2,
+        "imgSrc": "2.png",
+        "title": "peppered tuna tataki roll",
+        "itemsInBox": "6pcs",
+        "weight": "440g",
+        "price": 10,
+        "ingridients": "lobster & citrus aioli, avocado, tuna tataki, sesam"
+    },
+    {
+        "id": 3,
+        "imgSrc": "3.png",
+        "title": "las vegas roll",
+        "itemsInBox": "8pcs",
+        "weight": "530g",
+        "price": 14,
+        "ingridients": "salmon, crab mix, cream cheese, tempura fried"
+    }
+
+]
